@@ -1,24 +1,29 @@
 import './Footer.scss'
 import { Link } from 'react-router-dom'
+import linkedin from '../../assets/icons/linkedin-orange.png'
+import github from '../../assets/icons/github-orange.png'
+import instagram from '../../assets/icons/instagram-orange.png'
 
 function Footer() {
     return (
-        <div>
-            <div>
-                <h2>SEAMUS NAAYKENS</h2>
-                <p></p>
+        <div className='footer'>
+            <div className='footer__container'>
+                <h2 className='footer__heading'>SEAMUS NAAYKENS</h2>
+                <p className='footer__copy'></p>
             </div>
-            <div>
-                <h2>SOCIALS</h2>
-                <Link>
-                    <img alt='LinkedIn'/>
-                </Link>
-                <Link>
-                    <img alt='GitHub'/>
-                </Link>
-                <Link>
-                    <img alt='Instagram'/>
-                </Link>
+            <div className='footer__container'>
+                <h2 className='footer__heading'>SOCIALS</h2>
+                <div className='footer__subcontainer'>
+                    <Link to={'https://www.linkedin.com/in/seamus-naaykens/'} className='footer__link'>
+                        <img  className='footer__icon' src={linkedin} alt='LinkedIn' />
+                    </Link>
+                    <Link to={'https://github.com/SeamusNaaykens'} className='footer__link'>
+                        <img className='footer__icon' src={github} alt='GitHub' />
+                    </Link>
+                    <Link to={'https://www.instagram.com/adventuresofthesea/'} className='footer__link'>
+                        <img className='footer__icon' src={instagram} alt='Instagram' />
+                    </Link>
+                </div>
             </div>
         </div>
     )

@@ -1,0 +1,26 @@
+@use '../../styles/fonts' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    background-color: $blue;
+    padding: 1rem;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        font-size: 1.125rem;
+        color: $turquoise;
+    }
+
+    &__icon {
+        height: 2rem;
+        margin-right: .5rem;
+    }
+}
