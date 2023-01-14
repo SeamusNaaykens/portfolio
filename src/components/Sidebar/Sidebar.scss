@@ -1,0 +1,22 @@
+@use '../../styles/fonts' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: .5rem;
+    background-color: $blue;
+    width: 2rem;
+    border-radius: 1rem;
+
+
+    &__icon {
+        height: 2rem;
+    }
+
+    &__icon--other {
+        height: 2rem;
+    }
+}
