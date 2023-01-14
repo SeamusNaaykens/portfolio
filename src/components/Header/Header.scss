@@ -1,0 +1,71 @@
+@use '../../styles/fonts' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+
+.header {
+    position: sticky;
+    padding: .5rem 1rem .5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $blue;
+
+    &__logo {
+        height: 3rem;
+
+        @include tablet {
+            height: 4rem;
+        }
+
+        @include desktop {
+            height: 5rem;
+        }
+    }
+
+    &__container--2 {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__menu-button {
+        height: 2rem;
+        
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__link {
+        display: none;
+
+        @include tablet {
+            font-size: .75rem;
+            text-decoration: none;
+            color: $white;
+            display: inline;
+            animation: 2s infinite 100ms;
+        }
+    }
+
+    &__link:hover {
+        animation-name: transition;
+        animation-timing-function: ease-out;
+    }
+
+    @keyframes transition {
+        0% {
+            transition: $turquoise;
+        }
+
+        50% {
+            transition: $green;
+        }
+
+        100% {
+            transition: $orange;
+        }
+    }
+    
+}
