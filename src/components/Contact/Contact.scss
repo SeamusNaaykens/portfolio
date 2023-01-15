@@ -1,0 +1,77 @@
+@use '../../styles/fonts' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.contact {
+
+    &__heading {
+        margin-top: 0rem;
+        color: $mid-purple;
+    }
+
+    &__link-container {
+        display: flex;
+        align-content: center;
+        border-radius: .3125rem;
+        margin: .5rem;
+    }
+
+     &__link-container:hover {
+        background-color: $light-purple;
+     } 
+
+    &__container--2 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    &__icon {
+        height: 2rem;
+    }
+
+    &__link-name {
+        display: none;
+        margin: 0rem;
+    }
+
+    &__form {
+        margin-top: 1rem;
+        background-color: $peach;
+        padding: .5rem 1rem .5rem 1rem;
+        border-radius: .625rem;
+    }
+
+    &__form-input-container {
+        margin-bottom: .5rem;
+    }
+
+    &__form-heading {
+        margin: 0rem 0rem .25rem 0rem;
+        color: $mid-purple
+    }
+
+    &__form-input {
+        border-radius: .3125rem;
+        border:none;
+        height: 1.5rem;
+        width: 100%;
+        background-color: $mauve;
+    }
+
+    &__form-input--message {
+        border-radius: .3125rem;
+        border:none;
+        height: 3rem;
+        width: 100%;
+        background-color: $mauve;
+    }
+
+    &__form-button {
+        margin-top: .5rem;
+        background-color: $light-purple;
+        border:none;
+        height: 2rem;
+        border-radius: .3125rem;
+    }
+}

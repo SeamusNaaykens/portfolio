@@ -6,7 +6,8 @@
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    background-color: $blue;
+    background-image: url(../../assets/images/pexels-sergio-andrés-soto-13329032.jpg);
+    background-size: cover;
     padding: 1rem;
 
     @include tablet {
@@ -16,7 +17,7 @@
 
     &__heading {
         font-size: 1.125rem;
-        color: $turquoise;
+        color: $dark-purple;
     }
 
     &__icon {

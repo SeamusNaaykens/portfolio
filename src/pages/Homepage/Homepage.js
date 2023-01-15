@@ -5,7 +5,7 @@ import Contact from '../../components/Contact/Contact'
 
 function Homepage() {
     return (
-        <main>
+        <main className='homepage'>
             <About />
             <Projects />
             <Contact />

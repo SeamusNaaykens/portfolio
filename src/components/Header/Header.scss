@@ -5,12 +5,32 @@
 
 .header {
     position: sticky;
-    padding: .5rem 1rem .5rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $blue;
-    
+
+
+    background-color: $black;
+
+    &__image-banner--1 {
+        height: 4.25rem;
+        background-image: url(../../assets/images/pexels-sergio-andrés-soto-13329032.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__image-banner--2 {
+        height: 4.25rem;
+        background-image: url(../../assets/images/pexels-sergio-andrés-soto-13329032.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: -3.75rem;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem 1rem .5rem 1rem;
+    }
+
     &__logo {
         height: 3rem;
 
@@ -23,7 +43,7 @@
         }
     }
 
-    &__container--2 {
+    &__subcontainer--2 {
 
         @include tablet {
             width: 40%;
@@ -46,29 +66,12 @@
         @include tablet {
             font-size: .75rem;
             text-decoration: none;
-            color: $white;
+            color: $sand;
             display: inline;
-            animation: 2s infinite 100ms;
         }
     }
 
-    &__link:hover {
-        animation-name: transition;
-        animation-timing-function: ease-out;
-    }
 
-    @keyframes transition {
-        0% {
-            transition: $turquoise;
-        }
 
-        50% {
-            transition: $green;
-        }
-
-        100% {
-            transition: $orange;
-        }
-    }
 
 }
