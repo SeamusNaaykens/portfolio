@@ -1,0 +1,31 @@
+@use '../../styles/fonts' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.about {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+
+    &__sidebar {
+        justify-self: flex-start;
+    }
+
+    &__container {
+        margin: 1rem;
+    }
+
+    &__intro-copy {
+        color: $light-purple;
+        margin: 0rem;
+    }
+
+    &__heading {
+        color: $sand;
+        margin-top: 0rem;
+    }
+
+    &__copy {
+        color: $sand;
+    }
+}
