@@ -6,18 +6,26 @@
     display: flex;
     margin-bottom: 2rem;
     justify-content: center;
-
-    &__sidebar {
-        justify-self: flex-start;
-    }
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 2px solid $light-purple;
 
     &__container {
         margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        // background-image: url(../../assets/images/seamus-pic2.png);
+        // background-size: contain;
+        // background-repeat: no-repeat;
     }
 
     &__intro-copy {
         color: $light-purple;
         margin: 0rem;
+        font-family: 'bulgatti';
+        font-size: 3vw;
     }
 
     &__heading {
@@ -25,7 +33,20 @@
         margin-top: 0rem;
     }
 
+    &__image-container {
+        display: flex;
+        align-items: center;
+    }
+
     &__copy {
+        margin-top: 0rem;
         color: $sand;
+        font-family: 'copy';
+        text-align: justify;
+    }
+
+    &__avatar {
+        // z-index: -1;
+        height: 12rem;
     }
 }

@@ -5,15 +5,35 @@
 .contact {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
+    margin-bottom: 2rem;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__content {
+        @include tablet {
+            align-self: center;
+        }
+    }
 
     &__heading {
         margin-top: 0rem;
         color: $mid-purple;
+        text-align: center;
+        font-family: 'hussar';
+
+        // @include tablet {
+        //     font-size: 3rem;
+        // }
     }
 
     &__copy {
         color: $white;
+        text-align: center;
+        font-family: 'copy';
     }
 
     &__link-container {
@@ -21,11 +41,12 @@
         align-content: center;
         border-radius: .3125rem;
         margin: .5rem;
+        padding: .25rem;
     }
 
-     &__link-container:hover {
+    &__link-container:hover {
         background-color: $light-purple;
-     } 
+    }
 
     &__container--2 {
         display: flex;
@@ -45,8 +66,13 @@
     &__form {
         margin-top: 1rem;
         background-color: $peach;
-        padding: .5rem 1rem .5rem 1rem;
+        padding: 1rem;
         border-radius: .625rem;
+        font-family: 'hussar';
+
+        @include tablet {
+            width: 20rem;
+        }
     }
 
     &__form-input-container {
@@ -60,25 +86,112 @@
 
     &__form-input {
         border-radius: .3125rem;
-        border:none;
+        border: none;
         height: 1.5rem;
         width: 100%;
         background-color: $mauve;
+        padding-left: .5rem;
     }
 
     &__form-input--message {
         border-radius: .3125rem;
-        border:none;
+        border: none;
         height: 3rem;
         width: 100%;
         background-color: $mauve;
+        padding-left: .5rem;
     }
 
-    &__form-button {
-        margin-top: .5rem;
-        background-color: $light-purple;
-        border:none;
-        height: 2rem;
-        border-radius: .3125rem;
+    button {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        vertical-align: middle;
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+        font-size: inherit;
+        font-family: inherit;
+
+        &.email-button {
+            width: 12rem;
+            height: auto;
+
+            .circle {
+                @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                position: relative;
+                display: block;
+                margin: 0;
+                width: 3rem;
+                height: 3rem;
+                background: $dark-purple;
+                border-radius: 1.625rem;
+
+                .icon {
+                    @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    background: $white;
+
+                    &.arrow {
+                        @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                        left: 0.625rem;
+                        width: 1.125rem;
+                        height: 0.125rem;
+                        background: none;
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            top: -0.25rem;
+                            right: 0.0625rem;
+                            width: 0.625rem;
+                            height: 0.625rem;
+                            border-top: 0.125rem solid #fff;
+                            border-right: 0.125rem solid #fff;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+
+            .button-text {
+                @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 0.75rem 0;
+                margin: 0 0 0 1.85rem;
+                color: $black;
+                font-weight: 700;
+                line-height: 1.6;
+                text-align: center;
+                text-transform: uppercase;
+                color: $mid-purple;
+            }
+        }
+
+        &:hover {
+            .circle {
+                width: 100%;
+
+                .icon {
+                    &.arrow {
+                        background: $white;
+                        transform: translate(1rem, 0);
+                    }
+                }
+            }
+
+            .button-text {
+                color: $white;
+            }
+        }
     }
 }

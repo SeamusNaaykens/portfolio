@@ -1,0 +1,133 @@
+@use '../../styles/fonts' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+    border-bottom: 2px solid $light-purple;
+
+    @include tablet {
+        margin-bottom: 3rem;
+    }
+
+    &__heading {
+        color: $mid-purple ;
+        font-family: 'hussar';
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__container {
+        @include tablet {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+}
+
+figure.snip1206 {
+    font-family: 'hussar', Arial, sans-serif;
+    color: $mid-purple;
+    position: relative;
+    overflow: hidden;
+    margin: .625rem;
+    min-width: 13.75rem;
+    max-width: 19.375rem;
+    max-height: 13.75rem;
+    width: 100%;
+    color: $sand;
+    text-align: center;
+    border-radius: .625rem;
+  }
+  figure.snip1206 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+  }
+  figure.snip1206 img {
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+  }
+  figure.snip1206:after {
+    background: $mid-purple;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    opacity: 0.75;
+    -webkit-transform: skew(-45deg) scaleX(0);
+    transform: skew(-45deg) scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  figure.snip1206 figcaption {
+    position: absolute;
+    font-family: 'copy';
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  figure.snip1206 h2,
+  figure.snip1206 p {
+    margin: 0;
+    width: 100%;
+    opacity: 0;
+  }
+  figure.snip1206 h2 {
+    font-family: 'hussar';
+    padding: 0 1.875rem;
+    display: inline-block;
+    font-weight: 400;
+  }
+  figure.snip1206 p {
+    padding: 0 3.125rem;
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+  figure.snip1206 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  figure.snip1206:hover:after,
+  figure.snip1206.hover:after {
+    -webkit-transform: skew(-45deg) scaleX(1);
+    transform: skew(-45deg) scaleX(1);
+    transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  figure.snip1206:hover figcaption h2,
+  figure.snip1206.hover figcaption h2,
+  figure.snip1206:hover figcaption p,
+  figure.snip1206.hover figcaption p {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  figure.snip1206:hover figcaption h2,
+  figure.snip1206.hover figcaption h2 {
+    opacity: 1;
+  }
+  figure.snip1206:hover figcaption p,
+  figure.snip1206.hover figcaption p {
+    opacity: 0.7;
+  }
