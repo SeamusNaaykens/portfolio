@@ -13,7 +13,7 @@ function Projects() {
                         <img src={GrowLocal} alt='GrowLocal Thumbnail' />
                         <figcaption>
                             <h2>GrowLocal</h2>
-                            <p>An application designed to enable backyard gardeners to connect and trade with other locals in their area.</p>
+                            <p>An application designed to enable backyard gardeners to connect and trade homegrown produce with other locals in their area.</p>
                         </figcaption>
                         {/* <a href="#"></a> */}
                     </figure>

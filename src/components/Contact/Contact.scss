@@ -10,7 +10,7 @@
 
     @include tablet {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     &__content {
@@ -31,7 +31,7 @@
     }
 
     &__copy {
-        color: $white;
+        color: $mauve;
         text-align: center;
         font-family: 'copy';
     }
@@ -68,10 +68,10 @@
         background-color: $peach;
         padding: 1rem;
         border-radius: .625rem;
-        font-family: 'hussar';
+        font-family: 'hussarOther';
 
         @include tablet {
-            width: 20rem;
+            width: 25rem;
         }
     }
 

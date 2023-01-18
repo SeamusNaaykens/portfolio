@@ -11,6 +11,7 @@
     width: 6.75rem;
     height: 2rem;
     border-radius: 1rem;
+    transition: background-color .5s ease-out 100ms ;
 
 
     &__icon {
@@ -21,4 +22,8 @@
     &__icon--other {
         height: 2rem;
     }
+}
+
+.sidebar:hover {
+    background-color: $light-purple;
 }

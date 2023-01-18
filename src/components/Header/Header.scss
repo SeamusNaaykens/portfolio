@@ -67,7 +67,7 @@
 
     &__link {
         display: none;
-        font-family: 'hussar';
+        font-family: 'hussarOther';
         position: relative;
         text-decoration: none;
         padding-bottom: .25rem;
@@ -77,6 +77,10 @@
             text-decoration: none;
             color: $sand;
             display: inline;
+        }
+
+        @include desktop {
+            font-size: 1.25rem;
         }
     }
 
