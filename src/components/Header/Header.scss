@@ -102,11 +102,10 @@
         transform-origin: left;
         transform: scaleX(1);
     }
+}
 
-
-
-
-
-
-
+.modal {
+    background-color: $black;
+    width: 50%;
+    height: 100%;
 }

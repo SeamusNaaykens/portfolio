@@ -1,0 +1,68 @@
+@use '../../styles/fonts' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.nav-modal {
+    background-color: $black;
+    height: 100%;
+    padding-left: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__link-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-self: flex-start;
+        margin: 2rem 0rem 30rem 0rem;
+        padding-left: .5rem;
+
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $sand;
+        font-family: 'hussarOther';
+        position: relative;
+        padding-bottom: .25rem;
+        margin-bottom: 1rem;
+    }
+
+    &__link::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: $sand;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+
+    &__link:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    &__icon-container {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__icon {
+        width: 2rem;
+    }
+
+    &__close-icon {
+        width: 2rem;
+        margin-top: .5rem;
+    }
+
+}
