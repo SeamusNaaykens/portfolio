@@ -15,10 +15,27 @@
         justify-content: space-between;
     }
 
+    &__container {
+        background-color: rgba($color: #8e667f, $alpha: .6);
+        padding: .5rem;
+        border-radius: .625rem;
+    }
+
     &__heading {
         font-size: 1.125rem;
         color: $dark-purple;
         font-family: 'hussarOther';
+    }
+
+    &__copy {
+        font-family: 'hussarOther';
+        color: $dark-purple;
+    }
+
+    &__copyright {
+        font-family: 'hussarOther';
+        color: $dark-purple;
+        font-size: .5rem;
     }
 
     &__icon {

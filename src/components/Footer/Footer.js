@@ -9,7 +9,8 @@ function Footer() {
         <div className='footer'>
             <div className='footer__container'>
                 <h2 className='footer__heading'>SEAMUS NAAYKENS</h2>
-                <p className='footer__copy'></p>
+                <p className='footer__copy'>Full Stack Web Developer</p>
+                <p className='footer__copyright'>© Copyright 2023. Made by Seamus Naaykens</p>
             </div>
             <div className='footer__container'>
                 <h2 className='footer__heading'>SOCIALS</h2>
