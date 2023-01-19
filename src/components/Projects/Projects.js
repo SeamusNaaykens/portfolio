@@ -1,6 +1,6 @@
 import './Projects.scss'
-import GrowLocal from '../../assets/images/GrowLocal-screenshot.GIF'
-import portfolio from '../../assets/images/portfolio-SS.PNG'
+import GrowLocal from '../../assets/images/new-gl-ss.PNG'
+import portfolio from '../../assets/images/new-portfolio-screenshot.PNG'
 import Placeholder from '../../assets/images/placeholder.png'
 
 function Projects() {
@@ -23,7 +23,7 @@ function Projects() {
                         <img src={portfolio} alt='Portfolio Thumbnail' />
                         <figcaption>
                             <h2>Portfolio Site</h2>
-                            <p>The very application you are on now! I built this to display my work and the projects I have built.</p>
+                            <p>The very application you are on now! I created this to display my work and the projects I have built.</p>
                         </figcaption>
                     </figure>
                 </a>
@@ -31,8 +31,8 @@ function Projects() {
                      <figure class="snip1206">
                         <img src={Placeholder} alt='GrowLocal Thumbnail' />
                         <figcaption>
-                            <h2>Placeholder</h2>
-                            <p>An application designed to enable backyard gardeners to connect and trade with other locals in their area.</p>
+                            <h2>Coming Soon!</h2>
+                            <p>Keep an eye out for future projects to be added.</p>
                         </figcaption>
                     </figure>
                 </a>

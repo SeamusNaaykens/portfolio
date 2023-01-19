@@ -1,11 +1,13 @@
 import './Header.scss'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import { Link } from 'react-scroll'
 import logo from '../../assets/icons/sn-logo.jpg'
 import menu from '../../assets/icons/menu-button.png'
-import { useState } from 'react'
 import Modal from 'react-modal'
 import React from 'react'
 import NavModal from '../Modal/NavModal'
+
+
 
 function Header() {
 
@@ -32,20 +34,20 @@ function Header() {
             <div className='header__image-banner--1'></div>
             <div className='header__container'>
                 <div className='header__subcontainer--1'>
-                    <Link to={'/'} className='header__logo-link'>
+                    <NavLink to={'/'} className='header__logo-link'>
                         <img className='header__logo' src={logo} alt='Seamus Naaykens Logo' />
-                    </Link>
+                    </NavLink>
                 </div>
                 <div className='header__subcontainer--2'>
                     <img onClick={() => {
                         openModal()
                     }}
                         className='header__menu-button' src={menu} alt='menu button' />
-                    <Link to={'/'} className='header__link'>HOME</Link>
-                    <a href='../components/About/About.js' className='header__link'>ABOUT</a>
-                    <a className='header__link'>PROJECTS</a>
-                    <Link to={'/resume'} className='header__link'>RESUME</Link>
-                    <a className='header__link'>CONTACT</a>
+                    <NavLink to={'/'} className='header__link'>HOME</NavLink>
+                    <Link to='about' spy={true} smooth={true} className='header__link'>ABOUT</Link>
+                    <Link to='projects'  spy={true} smooth={true}className='header__link'>PROJECTS</Link>
+                    <NavLink to={'resume'} className='header__link'>RESUME</NavLink>
+                    <Link to='contact' spy={true} smooth={true}  className='header__link'>CONTACT</Link>
                 </div>
             </div>
             <div className='header__image-banner--2'></div>
