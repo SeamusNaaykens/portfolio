@@ -1,5 +1,6 @@
 import './Projects.scss'
 import GrowLocal from '../../assets/images/GrowLocal-screenshot.GIF'
+import portfolio from '../../assets/images/portfolio-SS.PNG'
 import Placeholder from '../../assets/images/placeholder.png'
 
 function Projects() {
@@ -15,17 +16,15 @@ function Projects() {
                             <h2>GrowLocal</h2>
                             <p>An application designed to enable backyard gardeners to connect and trade homegrown produce with other locals in their area.</p>
                         </figcaption>
-                        {/* <a href="#"></a> */}
                     </figure>
                 </a>
                 <a href='https://growlocal.app/' className='projects__link'>
                      <figure class="snip1206">
-                        <img src={Placeholder} alt='GrowLocal Thumbnail' />
+                        <img src={portfolio} alt='Portfolio Thumbnail' />
                         <figcaption>
-                            <h2>Placeholder</h2>
-                            <p>An application designed to enable backyard gardeners to connect and trade with other locals in their area.</p>
+                            <h2>Portfolio Site</h2>
+                            <p>The very application you are on now! I built this to display my work and the projects I have built.</p>
                         </figcaption>
-                        {/* <a href="#"></a> */}
                     </figure>
                 </a>
                 <a  href='https://growlocal.app/' className='projects__link'>
@@ -35,7 +34,6 @@ function Projects() {
                             <h2>Placeholder</h2>
                             <p>An application designed to enable backyard gardeners to connect and trade with other locals in their area.</p>
                         </figcaption>
-                        {/* <a href="#"></a> */}
                     </figure>
                 </a>
 

@@ -1,0 +1,384 @@
+@use '../../styles/fonts' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.resume {
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    @include tablet {
+        padding: 1rem 6rem 2rem 6rem;
+    }
+
+    @include desktop {
+        padding: 1rem 10rem 2rem 10rem;
+    }
+
+    &__heading {
+        color: $mid-purple;
+        font-family: 'hussar';
+        font-size: 1.5rem;
+
+        @include tablet {
+            font-size: 2rem;
+        }
+
+        @include desktop {
+            margin-top: 2rem;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        border: .125rem solid $sand;
+        margin-bottom: 1rem;
+        padding: .5rem;
+        border-radius: .3125rem;
+
+        @include tablet {
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
+
+        @include desktop {
+            width: 60%;
+        }
+    }
+
+    &__container-heading {
+        color: $mid-purple;
+        margin: 0rem 0rem .5rem 0rem;
+    }
+
+    &__copy {
+        font-family: 'copy';
+        color: $mauve;
+        margin: 0rem 0rem 2rem 0rem;
+    }
+
+    &__subcontainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__icon {
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+
+    &__icon:hover {
+        box-shadow: 0px 0px 150px #000000;
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.5);
+    }
+
+    &__icon--html {
+        height: 2.5rem;
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+
+    &__icon--html:hover {
+
+        box-shadow: 0px 0px 150px #000000;
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.5);
+    }
+
+
+    &__icon--react {
+        height: 3rem;
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+
+    &__icon--react:hover {
+        box-shadow: 0px 0px 150px #000000;
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.5);
+    }
+
+    &__icon--express {
+        height: 3rem;
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+
+    &__icon--express:hover {
+        box-shadow: 0px 0px 150px #000000;
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.5);
+    }
+
+    &__icon--knex {
+        height: 2.5rem;
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+
+    &__icon--knex:hover {
+        box-shadow: 0px 0px 150px #000000;
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.5);
+    }
+
+    &__icon--postman {
+        height: 2.5rem;
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+
+    &__icon--postman:hover {
+        box-shadow: 0px 0px 150px #000000;
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.5);
+    }
+
+    &__icon--netlify {
+        height: 2.5rem;
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+
+    &__icon--netlify:hover {
+        box-shadow: 0px 0px 150px #000000;
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.5);
+    }
+
+    &__education-heading {
+        color: $mid-purple;
+        text-align: center;
+        font-family: 'hussar';
+        font-size: 1.5rem;
+
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+
+    &__education-container {
+        width: 100%;
+        border: .125rem solid $mauve;
+        margin-bottom: 1rem;
+        padding: .5rem;
+        border-radius: .3125rem;
+
+        @include tablet {
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
+
+        @include desktop {
+            width: 60%;
+        }
+    }
+
+    &__education-title {
+        color: $mid-purple;
+        font-size: 1rem;
+    }
+
+    &__education-date {
+        color: $mauve;
+    }
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+
+    &.download-button {
+        width: 15rem;
+        height: auto;
+        margin-top: 1rem;
+
+        .circle {
+            @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+            position: relative;
+            display: block;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background: $dark-purple;
+            border-radius: 1.625rem;
+
+            .icon {
+                @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: $white;
+
+                &.arrow {
+                    @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                    left: 0.625rem;
+                    width: 1.125rem;
+                    height: 0.125rem;
+                    background: none;
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        top: -0.25rem;
+                        right: 0.0625rem;
+                        width: 0.625rem;
+                        height: 0.625rem;
+                        border-top: 0.125rem solid #fff;
+                        border-right: 0.125rem solid #fff;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+
+        .button-text {
+            @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.75rem 0;
+            margin: 0 0 0 1.85rem;
+            color: $black;
+            font-weight: 700;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+            color: $sand;
+        }
+    }
+
+    &:hover {
+        .circle {
+            width: 100%;
+
+            .icon {
+                &.arrow {
+                    background: $white;
+                    transform: translate(1rem, 0);
+                }
+            }
+        }
+
+        .button-text {
+            color: $sand;
+        }
+    }
+}
