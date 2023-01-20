@@ -16,7 +16,7 @@
     }
 
     &__container {
-        background-color: rgba($color: #8e667f, $alpha: .6);
+        background-color: rgba($color: #8e667f, $alpha: .5);
         padding: .5rem;
         border-radius: .625rem;
     }
@@ -25,16 +25,19 @@
         font-size: 1.125rem;
         color: $dark-purple;
         font-family: 'hussarOther';
+        margin-bottom: .5rem;
     }
 
     &__copy {
         font-family: 'hussarOther';
-        color: $dark-purple;
+        color: $sand;
+        font-size: .75rem;
+        margin-top: 0rem;
     }
 
     &__copyright {
         font-family: 'hussarOther';
-        color: $dark-purple;
+        color: $sand;
         font-size: .5rem;
     }
 

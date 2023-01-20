@@ -18,7 +18,7 @@ function Projects() {
                         </figcaption>
                     </figure>
                 </a>
-                <a href='https://growlocal.app/' className='projects__link'>
+                <a href='https://seamusnaaykens.com/' className='projects__link'>
                      <figure class="snip1206">
                         <img src={portfolio} alt='Portfolio Thumbnail' />
                         <figcaption>
