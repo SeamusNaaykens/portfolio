@@ -12,6 +12,7 @@ import GH from '../../assets/icons/github.png'
 import postman from '../../assets/icons/postman.png'
 import netlify from '../../assets/icons/netlify.png'
 import heroku from '../../assets/icons/heroku.png'
+import resume from '../../assets/files/seamus-naaykens-resume-012123.pdf'
 
 function Resume() {
     return (
@@ -63,7 +64,7 @@ function Resume() {
                 <span className="circle" aria-hidden="true">
                     <span className="icon arrow"></span>
                 </span>
-                <span className="button-text">DOWNLOAD RESUME</span>
+                <a href={resume} download='SeamusNaaykensResume'><span className="button-text">DOWNLOAD RESUME</span></a>
             </button>
         </main>
     )
