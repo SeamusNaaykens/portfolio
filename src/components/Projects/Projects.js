@@ -9,7 +9,7 @@ function Projects() {
         <div className='projects'>
             <h2 className='projects__heading'> FEATURED PROJECTS</h2>
             <div className='projects__container'>
-                <a href='https://growlocal.app/' className='projects__link'>
+                <a href='https://growlocal.app/' target='_blank' rel="noreferrer noopener" className='projects__link'>
                     <figure class="snip1206">
                         <img src={GrowLocal} alt='GrowLocal Thumbnail' />
                         <figcaption>
@@ -18,7 +18,7 @@ function Projects() {
                         </figcaption>
                     </figure>
                 </a>
-                <a href='https://seamusnaaykens.com/' className='projects__link'>
+                <a href='https://seamusnaaykens.com/' target='_blank' rel="noreferrer noopener" className='projects__link'>
                      <figure class="snip1206">
                         <img src={portfolio} alt='Portfolio Thumbnail' />
                         <figcaption>
@@ -27,7 +27,7 @@ function Projects() {
                         </figcaption>
                     </figure>
                 </a>
-                <a  href='https://growlocal.app/' className='projects__link'>
+                <a  href='https://growlocal.app/' target='_blank' rel="noreferrer noopener" className='projects__link'>
                      <figure class="snip1206">
                         <img src={Placeholder} alt='GrowLocal Thumbnail' />
                         <figcaption>
