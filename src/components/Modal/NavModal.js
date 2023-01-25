@@ -20,13 +20,13 @@ function NavModal({ toClose }) {
                 <Link to='contact' className='nav-modal__link' onClick={toClose}>CONTACT </Link>
             </div>
             <div className='nav-modal__icon-container'>
-                <a className='nav-modal__icon-link' href='https://www.linkedin.com/in/seamus-naaykens/'>
+                <a className='nav-modal__icon-link' href='https://www.linkedin.com/in/seamus-naaykens/' target='_blank' rel="noreferrer noopener">
                     <img className='nav-modal__icon' src={linkedin} alt='LinkedIn' />
                 </a>
-                <a className='nav-modal__icon-link' href='https://github.com/SeamusNaaykens'>
+                <a className='nav-modal__icon-link' href='https://github.com/SeamusNaaykens' target='_blank' rel="noreferrer noopener">
                     <img className='nav-modal__icon' src={github} alt='GitHub' />
                 </a>
-                <a className='nav-modal__icon-link' href='https://www.instagram.com/adventuresofthesea/'>
+                <a className='nav-modal__icon-link' href='https://www.instagram.com/adventuresofthesea/' target='_blank' rel="noreferrer noopener">
                     <img className='nav-modal__icon' src={instagram} alt='Instagram' />
                 </a>
             </div>

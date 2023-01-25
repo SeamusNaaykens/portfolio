@@ -6,13 +6,13 @@ import instagram from '../../assets/icons/instagram-orange.png'
 function Sidebar() {
     return (
         <div className='sidebar'>
-            <a href='https://www.linkedin.com/in/seamus-naaykens/' className='sidebar__link'>
+            <a href='https://www.linkedin.com/in/seamus-naaykens/' className='sidebar__link' target='_blank' rel="noreferrer noopener">
                 <img className='sidebar__icon' src={linkedin} alt='LinkedIn'/>
             </a>
-            <a href='https://github.com/SeamusNaaykens' className='sidebar__link'>
+            <a href='https://github.com/SeamusNaaykens' className='sidebar__link' target='_blank' rel="noreferrer noopener">
                 <img className='sidebar__icon' src={github} alt='GitHub'/>
             </a>
-            <a href='https://www.instagram.com/adventuresofthesea/' className='sidebar__link'>
+            <a href='https://www.instagram.com/adventuresofthesea/' className='sidebar__link' target='_blank' rel="noreferrer noopener">
                 <img className='sidebar__icon--other' src={instagram} alt='Instagram'/>
             </a>
         </div>
