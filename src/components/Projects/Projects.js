@@ -31,8 +31,8 @@ function Projects() {
                      <figure class="snip1206">
                         <img src={maclayne} alt='Maclayne.com Thumbnail' />
                         <figcaption>
-                            <h2>Maclayne Simone Artist Site</h2>
-                            <p>A personal website built for a musician named Maclayne Simone.</p>
+                            <h2>Maclayne.com</h2>
+                            <p>A personal artist website built for a musician named Maclayne Simone.</p>
                         </figcaption>
                     </figure>
                 </a>
