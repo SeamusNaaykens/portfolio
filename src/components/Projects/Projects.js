@@ -2,7 +2,7 @@ import './Projects.scss'
 import GrowLocal from '../../assets/images/new-gl-ss.PNG'
 import portfolio from '../../assets/images/new-portfolio-screenshot.PNG'
 import maclayne from '../../assets/images/maclayne-website-ss.JPG'
-import Placeholder from '../../assets/images/placeholder.png'
+
 
 function Projects() {
 
