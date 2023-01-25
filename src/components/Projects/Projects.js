@@ -1,6 +1,7 @@
 import './Projects.scss'
 import GrowLocal from '../../assets/images/new-gl-ss.PNG'
 import portfolio from '../../assets/images/new-portfolio-screenshot.PNG'
+import maclayne from '../../assets/images/maclayne-website-ss.JPG'
 import Placeholder from '../../assets/images/placeholder.png'
 
 function Projects() {
@@ -27,12 +28,12 @@ function Projects() {
                         </figcaption>
                     </figure>
                 </a>
-                <a  href='https://growlocal.app/' target='_blank' rel="noreferrer noopener" className='projects__link'>
+                <a  href='https://kaleidoscopic-stardust-19dc77.netlify.app/' target='_blank' rel="noreferrer noopener" className='projects__link'>
                      <figure class="snip1206">
-                        <img src={Placeholder} alt='GrowLocal Thumbnail' />
+                        <img src={maclayne} alt='Maclayne.com Thumbnail' />
                         <figcaption>
-                            <h2>Coming Soon!</h2>
-                            <p>Keep an eye out for future projects to be added.</p>
+                            <h2>Maclayne Simone Artist Site</h2>
+                            <p>A personal website built for a musician named Maclayne Simone.</p>
                         </figcaption>
                     </figure>
                 </a>
